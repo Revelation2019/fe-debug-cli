@@ -1,6 +1,6 @@
 {
   "name": "fe-debug-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "前端本地调试命令行工具",
   "main": "index.js",
   "keywords": [
