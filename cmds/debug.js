@@ -6,7 +6,7 @@ exports.command = 'debug';
 exports.describe = '调试应用';
 
 exports.builder = yargs => {
-	yargs
+	return yargs
 		.option('config', {
 			alias: 'c',
 			default: 'debug.js',
@@ -18,7 +18,8 @@ exports.builder = yargs => {
 			default: 3000,
 			describe: '端口',
 			type: 'number',
-		});
+		})
+    .argv
 };
 
 exports.handler = function(argv) {

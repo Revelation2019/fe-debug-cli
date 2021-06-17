@@ -12,7 +12,7 @@ module.exports = {
 				'/agentBuy',
 				'/inquiryWeb',
 				'/webim',
-				'/cart',
+				'/cart/web',
 				'/msg',
 				'/maindata',
 				'/pointshop',
