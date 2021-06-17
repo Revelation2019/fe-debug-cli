@@ -1,0 +1,52 @@
+{
+  "name": "fe-debug-cli",
+  "version": "1.0.0",
+  "description": "前端本地调试命令行工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "eslint --fix src/**/*.ts",
+    "build": "rimraf dist && tsc -p tsconfig.json",
+    "start:dev": "tsc-watch -p tsconfig.json --onSuccess \"node index.js\" | bunyan -L",
+    "start:debug": "tsc-watch -p tsconfig.json --onSuccess \"node --inspect-brk index.js\" | bunyan -L"
+  },
+  "bin": {
+    "fee": "./bin/index.js"
+  },
+  "author": "pony",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bunyan": "^1.8.15",
+    "chalk": "^4.1.1",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "log4js": "^6.3.0",
+    "module-alias": "^2.2.2",
+    "request": "^2.88.2",
+    "rimraf": "^3.0.2",
+    "tsc-watch": "^4.4.0",
+    "typescript": "^4.3.3",
+    "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/chalk": "^2.2.0",
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.12.2",
+    "@types/request": "^2.48.5",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint": "^7.28.0"
+  },
+  "files": [
+    "bin/*",
+    "cmds/*",
+    "config/*",
+    "dist/*",
+    "index.js",
+    "package.json",
+    "tsconfig.json",
+    "README.md"
+  ]
+}
