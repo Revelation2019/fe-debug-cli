@@ -1,8 +1,12 @@
 {
   "name": "fe-debug-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "前端本地调试命令行工具",
   "main": "index.js",
+  "keywords": [
+    "debug",
+    "cli"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "eslint --fix src/**/*.ts",
@@ -13,8 +17,16 @@
   "bin": {
     "fee": "./bin/index.js"
   },
-  "author": "pony",
+  "author": "zhousheng_zuel@163.com",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Revelation2019/fe-debug-cli/issues",
+    "email": "zhousheng_zuel@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Revelation2019/fe-debug-cli.git"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "bunyan": "^1.8.15",
